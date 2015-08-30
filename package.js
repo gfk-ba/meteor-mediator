@@ -1,12 +1,8 @@
 Package.describe({
   name: 'gfk:mediator',
-  version: '0.1.0',
-  // Brief, one-line summary of the package.
-  summary: '',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  version: '1.0.0',
+  summary: 'Adds a mediator to your application',
+  git: 'https://github.com/gfk-ba/meteor-mediator/',
   documentation: 'README.md'
 });
 
@@ -19,5 +15,4 @@ Package.onUse(function(api) {
   api.use('cosmos:browserify@0.5.0', 'client');
   api.addFiles('client.browserify.js');
   api.export('Mediator');
-
 });
